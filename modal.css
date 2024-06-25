@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster_Two/LobsterTwo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* VENTANA MODAL*/
+
+button {
+    font-family: 'Lobster';
+    letter-spacing: 2px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(124, 180, 136, 0.76);
+    cursor: pointer;
+}
+
+.close {
+    margin-top: 30px;
+}
+
+#modal_containerP {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+
+}
+
+.modalP {
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: url('img/backflower2.jpg');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position-y: 280px;
+    background-position-x: -35px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(124, 180, 136, 0.76);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 30px;
+    padding: 25px;
+    padding-top: 20px;
+}
+
+.modalP h3 {
+    font-size: 25px;
+}
+
+.modalP .text {
+    padding: 10px;
+}
+
+.imgModal {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid rgba(124, 180, 136, 0.74);
+    border-radius: 5px;
+    /*box-shadow: 10px 10px 20px rgba(202, 245, 211, 0.712);*/
+}
+
+#modal_containerP2 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP3 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP4 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP5 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP6 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP7 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP8 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP9 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP10 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP11 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#modal_containerP12 {
+    margin: 10% 30%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* MEDIA QUERY RESPONSIVE */
+
+@media (max-width: 1600px) {
+    .modalP {
+        position: relative;
+        left: -8%;
+    }
+}
+
+@media (max-width: 1355px) {
+    .modalP {
+        position: relative;
+        left: -14%;
+    }
+}
+
+@media (max-width: 1317px) {
+    .modalP {
+        position: relative;
+        left: -15%;
+    }
+}
+
+@media (max-width: 1070px) {
+    .modalP {
+        position: relative;
+        left: -17%;
+    }
+}
+
+@media (max-width: 960px) {
+    .modalP {
+        position: relative;
+        left: -22%;
+    }
+}
+
+@media (max-width: 880px) {
+    .modalP {
+        position: relative;
+        top: 35%;
+        left: -26%;
+        width: 66vh;
+        height: 50vh;
+    }
+
+    .imgModal {
+        width: 40%;
+        height: 40%px;
+        margin: 10px;
+    }
+
+    .modalP .text {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 790px) {
+    .modalP {
+        left: -29%;
+    }
+}
+
+@media (max-width: 790px) {
+    .modalP {
+        left: -32%;
+    }
+}
+
+@media (max-width: 680px) {
+    .modalP {
+        position: relative;
+        top: 15%;
+        left: -32%;
+        width: 60vh;
+        height: 71vh;
+    }
+
+    .imgModal {
+        width: 250px;
+        height: 160px;
+        margin: 10px;
+    }
+
+    .modalP .text {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 630px) {
+    .modalP {
+        top: 20%;
+        left: -36%;
+        width: 46vh;
+        height: 71vh;
+    }
+}
+
+@media (max-width: 490px) {
+    .modalP {
+        top: 20%;
+        left: -37%;
+        width: 42vh;
+        height: 71vh;
+    }
+}
+
+@media (max-width: 470px) {
+    .modalP {
+        top: 20%;
+        left: -39%;
+        width: 36vh;
+        height: 71vh;
+    }
+}

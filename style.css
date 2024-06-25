@@ -1,0 +1,350 @@
+/* GENERALES*/
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster_Two/LobsterTwo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url('img/patron2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+#container {
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+.wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+/* CABECERA */
+#header {
+    width: 100%;
+    height: 195px;
+    font-family: 'Lobster';
+    display: inline-block;
+    background-color: rgba(253, 252, 250, 0.589);
+}
+
+#logo {
+    height: 150px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+}
+
+#logo img {
+    width: 200px;
+    margin-top: -5px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 7px black);
+}
+
+#logo img:hover {
+    transform: scale(1.4, 1.4);
+}
+
+#logo h1 {
+    float: right;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 180px;
+    text-decoration: underline;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.nav {
+    text-decoration: none;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 86px;
+    float: right;
+    transition: max-height .5s ease-out;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+.menu--show {
+    transform: translateY(125px);
+}
+
+.nav ul li {
+    text-decoration: none;
+    font-family: 'Lobster';
+    font-size: 29px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0.5em;
+
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px 8px 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 1px rgba(7, 104, 71, 0.603);
+}
+
+.nav ul li:hover a {
+    text-decoration: none;
+    background: rgba(19, 194, 141, 0.664);
+}
+
+.nav ul li a:active {
+    text-decoration: none;
+    background: rgba(116, 206, 233, 1.5);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* MENÚ HAMBURGUESA */
+
+.hamb {
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    float: left;
+    margin: 20px 20px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color: rgba(19, 194, 141, 0.664);
+    box-shadow: 2px 2px 2px 1px rgba(7, 104, 71, 0.603);
+    z-index: 3;
+}
+
+.hamb-line {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+.side-menu:checked~nav {
+    max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+    background: transparent;
+}
+
+
+.side-menu:checked~.hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media screen and (min-width: 770px) {
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: row;
+        transform: translateY(0);
+    }
+
+    .nav ul li {
+        padding: 0;
+        margin: 0px 2px;
+    }
+
+    .hamb {
+        display: none;
+    }
+}
+
+/* CLIP INTRO */
+
+#clip {
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#intro {
+    padding: 20px;
+    font-family: 'Lobster';
+    font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 6px;
+    background: linear-gradient(to right, #fdfcfa98 15%, #3c9982ab);
+}
+
+#clip video {
+    border-radius: 20px;
+}
+
+/* SECCIONES */
+
+.left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 252, 250, 0.589);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content {
+    max-width: 1350px;
+    display: flex;
+}
+
+section article {
+    margin: 50px;
+}
+
+section article h3 {
+    font-family: 'Lobster';
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+section article p {
+    font-family: 'OpenSans';
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+section .indexImg {
+    border: 2px solid rgba(124, 180, 136, 0.63);
+    border-radius: 30% 10% 30% 10%;
+    box-shadow: 10px 10px 20px rgba(124, 180, 136, 0.63);
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgba(253, 252, 250, 0.589);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.right .indexImg {
+    margin-left: 85px;
+    margin-right: 0px;
+}
+
+/* FOOTER */
+footer {
+    height: 30px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(7, 104, 72, 0.801);
+    margin-top: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer div p {
+    font-family: 'OpenSans';
+    font-weight: bold;
+    line-height: 52px;
+}
+
+.icons {
+    display: inline;
+    margin: 5px;
+}
+
+.icon1 img {
+    width: 40px;
+    border-radius: 13px;
+    margin-left: 25px;
+    background-color: white;
+}
+
+.icon2 img {
+    width: 40px;
+    margin-left: 25px;
+    border-radius: 55x;
+}
+
+.icon3 img {
+    width: 40px;
+    margin-left: 25px;
+    border-radius: 10px;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="manualidades, decoración, organización, handmade">
+    <meta name="keywords" content="cajas, manualidades, decoración, cajitas, organización">
+    <title>El rincón de Teresa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="icon" href="img/Logotipo3r.png">
+</head>
+
+<body>
+    <main id="container">
+
+        <!-- INCIO DE CABECERA -->
+        <header id="header">
+            <div class="wrap">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logotipo.png" alt="Logotipo">
+                    </a>
+
+                    <h1>El Rincón de Teresa</h1>
+                </div>
+
+                <!-- INICIO DE MENÚ -->
+                <input type="checkbox" id="side-menu" class="side-menu">
+                <label for="side-menu" id="side-menu" class="hamb"><span class="hamb-line"></span></label>
+
+                <nav class="nav">
+                    <ul id="menu" class="menu">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="contacto.php">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- FIN DE MENÚ -->
+            </div>
+
+        </header>
+        <!-- FIN DE CABECERA -->
+
+        <!-- INICIO SECCIÓN -->
+        <section>
+            <h2>Échale un vistazo a los productos en stock</h2>
+
+            <!-- INICO DE CARDS -->
+            <div class="cards">
+                <div class="card">
+                    <img class="img" src="img/caja1(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cestita floral rosa</h3>
+                        <p class="text">Alto: 14cm</p>
+                        <p class="text">Ancho: 10cm</p>
+                        <p class="text">Largo: 23cm</p>
+                        <p class="text">8€</p>
+                        <button id="open1" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cestita floral rosa</h3>
+                        <img class="imgModal" src="img/caja1(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja1-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 14cm</p>
+                            <p class="text">Ancho: 10cm</p>
+                            <p class="text">Largo: 23cm</p>
+                            <p class="text">8€</p>
+                            <p class="text">Cestita en tonos rosa y crema, con decoración floral</p>
+                        </div>
+                        <button id="close1" class="close" type="button" value="Cerrar">Cerrar</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja2(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cesta marrón</h3>
+                        <p class="text">Alto: 15cm</p>
+                        <p class="text">Ancho: 15cm</p>
+                        <p class="text">Largo: 26cm</p>
+                        <p class="text">10€</p>
+                        <button id="open2" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP2" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cesta marrón</h3>
+                        <img class="imgModal" src="img/caja2(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja2-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 15cm</p>
+                            <p class="text">Ancho: 15cm</p>
+                            <p class="text">Largo: 26cm</p>
+                            <p class="text">10€</p>
+                            <p class="text">Cesta en tonos marrones estilo mimbre, con interior forrado en tela</p>
+                        </div>
+                        <button id="close2" class="close" type="button" value="Cerrar">Cerrar</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja3(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cestita azulada</h3>
+                        <p class="text">Alto: 12cm</p>
+                        <p class="text">Ancho: 14cm</p>
+                        <p class="text">Largo: 14cm</p>
+                        <p class="text">6€</p>
+                        <button id="open3" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP3" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cestita azulada</h3>
+                        <img class="imgModal" src="img/caja3(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja3-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 12cm</p>
+                            <p class="text">Ancho: 14cm</p>
+                            <p class="text">Largo: 14cm</p>
+                            <p class="text">6€</p>
+                            <p class="text">Cestita azulada con decoración floral, con el interior forrado en tela</p>
+                        </div>
+                        <button id="close3" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja4(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Lapicero naranja</h3>
+                        <p class="text">Alto: 14cm</p>
+                        <p class="text">Ancho: 10cm</p>
+                        <p class="text">Largo: 10cm</p>
+                        <p class="text">5€</p>
+                        <button id="open4" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP4" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Lapicero naranja</h3>
+                        <img class="imgModal" src="img/caja4(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja4-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 14cm</p>
+                            <p class="text">Ancho: 10cm</p>
+                            <p class="text">Largo: 10cm</p>
+                            <p class="text">5€</p>
+                            <p class="text">Cestita pequeña de color naranja y decorado florar, ideal para lapicero</p>
+                        </div>
+                        <button id="close4" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="img" src="img/caja5(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Diseño bambú</h3>
+                        <p class="text">Alto: 16,5cm</p>
+                        <p class="text">Ancho: 14cm</p>
+                        <p class="text">Largo: 17cm</p>
+                        <p class="text">6€</p>
+                        <button id="open5" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP5" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Diseño bambú</h3>
+                        <img class="imgModal" src="img/caja5(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja5-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <h3 class="title">Diseño bambú</h3>
+                            <p class="text">Alto: 16,5cm</p>
+                            <p class="text">Ancho: 14cm</p>
+                            <p class="text">Largo: 17cm</p>
+                            <p class="text">6€</p>
+                            <p class="text">Cestita de tonos claros, decorada con papel pintado y forrado en el interior
+                                con tela</p>
+                        </div>
+                        <button id="close5" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja6(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cestita girasol</h3>
+                        <p class="text">Alto: 12,5cm</p>
+                        <p class="text">Ancho: 8cm</p>
+                        <p class="text">Largo: 23cm</p>
+                        <p class="text">8€</p>
+                        <button id="open6" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP6" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cestita girasol</h3>
+                        <img class="imgModal" src="img/caja6(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja6-2.jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 12,5cm</p>
+                            <p class="text">Ancho: 8cm</p>
+                            <p class="text">Largo: 23cm</p>
+                            <p class="text">8€</p>
+                            <p class="text">Cestita hecha de paletinas con decorado de girasol y forrada en el interior
+                                con tela floral</p>
+                        </div>
+                        <button id="close6" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja7(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cesta floral</h3>
+                        <p class="text">Alto: 15cm</p>
+                        <p class="text">Ancho: 26cm</p>
+                        <p class="text">Largo: 26cm</p>
+                        <p class="text">15€</p>
+                        <button id="open7" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP7" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cesta floral</h3>
+                        <img class="imgModal" src="img/caja7(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja7-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 15cm</p>
+                            <p class="text">Ancho: 26cm</p>
+                            <p class="text">Largo: 26cm</p>
+                            <p class="text">15€</p>
+                            <p class="text">Cesta estilo mimbre en tonos claros y desño floral, forrado en el interior
+                                con tela en tono claro</p>
+                        </div>
+                        <button id="close7" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja8(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cesta fresa y nata</h3>
+                        <p class="text">Alto: 9cm</p>
+                        <p class="text">Ancho: 12cm</p>
+                        <p class="text">Largo: 29cm</p>
+                        <p class="text">8€</p>
+                        <button id="open8" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP8" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cesta fresa y nata</h3>
+                        <img class="imgModal" src="img/caja8(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja8-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 9cm</p>
+                            <p class="text">Ancho: 12cm</p>
+                            <p class="text">Largo: 29cm</p>
+                            <p class="text">8€</p>
+                            <p class="text">Cesta en tonos rosa y blanco que inspiran para una decoración de pastelería
+                            </p>
+                        </div>
+                        <button id="close8" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="img" src="img/caja9(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cesta marina</h3>
+                        <p class="text">Alto: 10cm</p>
+                        <p class="text">Ancho: 12cm</p>
+                        <p class="text">Largo: 20cm</p>
+                        <p class="text">8€</p>
+                        <button id="open9" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP9" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cesta marina</h3>
+                        <img class="imgModal" src="img/caja9(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja9-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 10cm</p>
+                            <p class="text">Ancho: 12cm</p>
+                            <p class="text">Largo: 20cm</p>
+                            <p class="text">8€</p>
+                            <p class="text">Cesta decorada exteriormente con hilo y estampado floral, forrada en el
+                                interior con tela en tonos azules oscuros</p>
+                        </div>
+                        <button id="close9" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja10(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Caja de primavera</h3>
+                        <p class="text">Alto: 12cm</p>
+                        <p class="text">Ancho: 23cm</p>
+                        <p class="text">Largo: 36cm</p>
+                        <p class="text">15€</p>
+                        <button id="open10" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP10" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Caja de primavera</h3>
+                        <img class="imgModal" src="img/caja10(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja10-2.jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 12cm</p>
+                            <p class="text">Ancho: 23cm</p>
+                            <p class="text">Largo: 36cm</p>
+                            <p class="text">15€</p>
+                            <p class="text">Caja de madera que cuenta con una cubierta deslizante, pintada con papel de
+                                pajaritos y flores que recuerdan a la primavera. En el interior forrada con papel en
+                                tonos blancos y estampado de mariposas. </p>
+                        </div>
+                        <button id="close10" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja11(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Cesta elegante</h3>
+                        <p class="text">Alto: 8,5cm</p>
+                        <p class="text">Ancho: 23cm</p>
+                        <p class="text">Largo: 31,5cm</p>
+                        <p class="text">15€</p>
+                        <button id="open11" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP11" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Cesta elegante</h3>
+                        <img class="imgModal" src="img/caja11(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja11-2(1).jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 8,5cm</p>
+                            <p class="text">Ancho: 23cm</p>
+                            <p class="text">Largo: 31,5cm</p>
+                            <p class="text">15€</p>
+                            <p class="text">Cesta en tonos marrón claro, con decoración florar y forrada en el interior
+                                con tela. Su combinación de materiales proporcionan un acabado elegante y sencillo,
+                                siendo así en una pieza de decoración única para colocar en un recibidor</p>
+                        </div>
+                        <button id="close11" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="img/caja12(1).jpg" alt="Foto de una cestita">
+                    <div class="box">
+                        <h3 class="title">Vintage Garden</h3>
+                        <p class="text">Alto: 21cm</p>
+                        <p class="text">Ancho: 16cm</p>
+                        <p class="text">Largo: 30cm</p>
+                        <p class="text">13€</p>
+                        <button id="open12" type="button" value="Ver más">Ver más</button>
+                    </div>
+                </div>
+
+                <div id="modal_containerP12" class="hidden">
+                    <div class="modalP">
+                        <h3 class="title">Vintage Garden</h3>
+                        <img class="imgModal" src="img/caja12(1).jpg" alt="Foto de una cestita">
+                        <img class="imgModal" src="img/caja12-2.jpg" alt="Foto de una cestita">
+                        <div class="description">
+                            <p class="text">Alto: 21cm</p>
+                            <p class="text">Ancho: 16cm</p>
+                            <p class="text">Largo: 30cm</p>
+                            <p class="text">13€</p>
+                            <p class="text">Cubo de latón con decoración frontal Vintage Garden y trasera decoración
+                                floral en tonos azules y rosas. Un bonito diseño que puede funcionar como macetero</p>
+                        </div>
+                        <button id="close12" class="close" type="button" value="Cerrar">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FIN DE CARDS -->
+        </section>
+
+        <!-- FIN SECCIÓN -->
+
+    </main>
+
+</body>
+
+<!-- INICIO FOOTER-->
+<footer>
+    <div>
+        <p> &copy TheLittleCode - El Rincón de Teresa</p>
+    </div>
+
+    <div class="icons">
+        <a class="icon1" href="#"><img src="img/insta-removebg-preview.png"></a>
+
+        <a class="icon3" href="#"><img src="img/tlf.png"></a>
+
+        <a class="icon2" href="#"><img src="img/mensaje.png"></a>
+
+    </div>
+</footer>
+<!-- FIN FOOTER-->
+
+<script src="index.js"></script>
+
+<script src="products.js"></script>
+
+</html>
